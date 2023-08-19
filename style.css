@@ -56,7 +56,7 @@ h1,h2,h3,h4 {
 
 
 .header {
-  background:  url(/images/bg-header-mobile.png) ;
+  background:  url(images/bg-header-mobile.png) ;
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
@@ -216,7 +216,7 @@ background: var(--light-blue);
 }
 @media screen and (min-width:765px) {
   header {
-  background:  url(/images/bg-header-desktop.png) ;
+  background:  url(images/bg-header-desktop.png) ;
 }
 
 #logo {
