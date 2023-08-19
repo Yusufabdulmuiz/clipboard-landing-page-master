@@ -1,1 +1,329 @@
 
+  @import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap');
+
+* {
+  font-family: 'Bai Jamjuree', sans-serif;
+  padding: 0;
+  margin: 0;
+}
+:root {
+--strong-cyan: hsl(171, 66%, 44%);
+--light-blue: hsl(233, 100%, 69%);
+--dark-grayish-blue: hsl(210, 10%, 33%);
+--grayish-blue: hsl(201, 11%, 66%);
+}
+
+body {
+  background: white;
+ 
+}
+a {
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  cursor: pointer;
+}
+ul li {
+  list-style: none;
+  margin: 1rem;
+}
+section,footer {
+  padding: 1.5rem;
+}
+
+img {
+ display: inline-block;
+ width:100%;
+  
+}
+li {
+  text-align: center;
+  color: var(--grayish-blue);
+}
+p {
+  text-align: center;
+  color: var(--grayish-blue);
+  font-size: 13px;
+  line-height: 1.5;
+  padding: 1rem 0;
+}
+h1,h2,h3,h4 {
+  color: var(--dark-grayish-blue);
+  text-align: center;
+  
+}
+/*header*/
+
+
+.header {
+  background:  url(/images/bg-header-mobile.png) ;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  grid-template-columns: 100%;
+  display: grid;
+  place-items: center;
+}
+
+#logo {
+  margin: 5rem auto;
+}
+
+
+/*main*/
+main {
+  display:grid;
+  grid-template-columns: 100%;
+}
+
+/*hero section*/
+
+h1 {
+  font-weight: 600;
+  line-height: 1.5;
+}
+#buttons  {
+ margin-bottom: 2rem;
+}
+
+#buttons a{
+  font-size: 15px;
+  padding: 1rem;
+  font-weight: 700;
+  margin-top: 1rem;
+  color: white;
+  border-radius: 25px;
+}
+
+.btn-ios {
+background: var(--strong-cyan);
+  
+}
+.btn-ios:hover {
+  box-shadow: 5px 10px  hsla(171, 66%, 44%,.1);;
+}
+
+.btn-mac {
+background: var(--light-blue);
+  transition: .4s;
+}
+.btn-mac:hover {
+  box-shadow: 5px 10px hsla(233, 100%, 69%,.1) ;
+  transition: .4s;
+}
+
+
+/**about section**/
+#about {
+  padding-top: 10rem;
+ 
+}
+
+#computer-image{
+  padding: 4em 0;
+}
+ article {
+  margin: 4rem 0;
+  padding: 0;
+}
+
+
+
+/**acces section**/
+#access p {
+  margin-bottom: 1rem;
+}
+
+
+
+/**features section**/
+
+#features>p {
+  margin-bottom: 1rem;
+}
+
+#feature-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+#feature-wrapper #feature {
+  display: grid;
+  margin: 1rem;
+  
+}
+
+#feature-wrapper #feature img {
+  
+  width: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 3rem; 
+}
+
+
+#logos {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+#logos img {
+  width: 100px;
+  margin: 3rem;
+}
+/* footer */
+#footer{
+ display: block;
+ background-color: ghostwhite;
+}
+#footer>#logo {
+  display: grid;
+  place-items: center;
+
+  
+}
+#footer #logo img {
+  width: 70px;
+}
+
+
+#footer #links li a{
+  font-size: 16px;
+  color:var(--light-grey);
+}
+#footer #links li a:hover {
+  color: var(--strong-cyan);
+  transition: 1s;
+}
+#social-icons {
+  display: flex;
+  margin:0 auto;
+  justify-content: center;
+  align-items: center;
+}
+
+#social-icons img {
+  width: 20px;
+  margin:1.5rem;
+}
+#social-icons img:hover{
+  cursor: pointer;
+  color: var(--strong-cyan);
+  transition: 1s;
+}
+@media screen and (min-width:765px) {
+  header {
+  background:  url(/images/bg-header-desktop.png) ;
+}
+
+#logo {
+  margin: 4rem auto;
+}
+
+
+/*main*/
+main {
+  display:grid;
+  grid-template-columns: 100%;
+}
+
+/*hero section*/
+
+h1 {
+  font-weight: 600;
+  line-height: 1.5;
+}
+#buttons  {
+ margin-bottom: 2rem;
+ display: flex;
+ justify-content: center;
+ align-items: center ;
+}
+
+#buttons a{
+  font-size: 16px;
+  font-weight: 700;
+  margin: 1rem;
+
+}
+
+.btn-ios {
+background: var(--strong-cyan);
+  
+}
+
+.btn-mac {
+background: var(--light-blue);
+  
+}
+/*about  */
+#about>p {
+  padding: 4rem;
+}
+#about-container {
+  display: flex ;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+#computer-image {
+  position: relative;
+  left: -5% ;
+ 
+}
+#about-details {
+  padding: 4rem;
+}
+#about-details article h4 {
+  text-align: left;
+}
+
+#about-details p {
+  text-align: left;
+}
+
+#access-image {
+  width :80%;
+  margin: 0 auto;
+}
+/* features section */
+#feature-wrapper {
+  flex-wrap: nowrap;
+}
+#feature {
+  flex-basis: 33%;
+  align-self: center;
+}
+
+
+#logos {
+  flex-direction: row ;
+  margin: 4rem;
+}
+
+
+#availability>p{
+  padding: 1rem 5rem;
+}
+
+
+#footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#links ul {
+  display: grid;
+  grid-template-columns: repeat(3,1fr) ;
+}
+#links ul li a {
+  text-align: left;
+  margin: 0;
+}
+
+}
